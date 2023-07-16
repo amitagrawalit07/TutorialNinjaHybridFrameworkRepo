@@ -1,0 +1,55 @@
+Oops concepts in Selenium Automation:
+
+#1. ABSTRACTION
+Abstraction is the methodology of hiding the implementation of internal details and showing the functionality to the users.
+In Page Object Model design pattern, we write locators (such as id, name, xpath etc.,) and the methods in a Page Class. We utilize these locators in tests but we can’t see the implementation of the methods. Literally we hide the implementations of the locators from the tests.
+#2. INTERFACE
+Basic statement we all know in Selenium is WebDriver driver = new FirefoxDriver();
+WebDriver itself is an Interface. So based on the above statement WebDriver driver = new FirefoxDriver(); we are initializing Firefox browser using Selenium WebDriver
+We can achieve 100% abstraction and multiple inheritance in Java with Interface.
+#3. INHERITANCE
+The mechanism in Java by which one class acquires the properties (instance variables) and functionalities of another class is known as Inheritance.
+We create a Base Class in the Automation Framework to initialize WebDriver interface, WebDriver waits, Property files, Excels, etc., in the Base Class.
+We extend the Base Class in other classes such as Tests and Utility Class.
+#4. POLYMORPHISM
+Polymorphism allows us to perform a task in multiple ways.
+#1. METHOD OVERLOADING
+We use Implicit wait in Selenium. Implicit wait is an example of overloading. In Implicit wait we use different time stamps such as SECONDS, MINUTES, HOURS etc.,rttdsz
+Action class in TestNG is also an example of overloading.
+Assert class in TestNG is also an example of overloading.
+#2. METHOD OVERRIDING
+We use a method which was already implemented in another class by changing its parameters. To understand this you need to understand Overriding in Java.
+Declaring a method in child class which is already present in the parent class is called Method Overriding. Examples are get and navigate methods of different drivers in Selenium .
+
+one more example of overriding :
+In class XLutils , we extend TestListnerAdapter class to implement its method OnTestStart,OnTestSkip,OnTestFailure etc.
+
+
+Selenium limitations. 
+1. Selenium does not support automation testing for desktop applications.
+2. Does not provide any test management tool
+3. Lacks built-in reporting feature
+4. Supports only a single browser
+6. Unable testing of Image-based web applications
+7. Inability to test mobile apps directly
+8. We can't perform automation tests on web services like SOAP or REST using Selenium
+9. Creating test environment in Selenium takes more time as compared to vendor tools like UFT, RFT, Silk test, etc.
+10. Unable to handle dynamic elements
+11. It does not have built-in Object Repository like UTF/QTP to maintain objects/elements in centralized location.
+12. You cannot create cross-platform end-to-end tests with WebDriver.
+
+//about testNG listener
+test inside classes are going to fire the events and 
+these events will be listened by the methods in the
+listeners class and when these methods get invoked we
+write some code in those methods to perform such kind 
+of actions when such kind of events occur
+
+===========================================================
+java -jar jenkins.war
+jenkins - 6aba6f4eaa0c4ae09257156f899118a7
+
+username = amit0707
+password=12345
+email-amitagrawal.it07@gmail.com
+http://localhost:8080/
