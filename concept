@@ -46,10 +46,3 @@ write some code in those methods to perform such kind
 of actions when such kind of events occur
 
 ===========================================================
-java -jar jenkins.war
-jenkins - 6aba6f4eaa0c4ae09257156f899118a7
-
-username = amit0707
-password=12345
-email-amitagrawal.it07@gmail.com
-http://localhost:8080/
